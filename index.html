@@ -10,6 +10,7 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/script.js" defer></script>
 </head>
 
 <body>
@@ -28,9 +29,20 @@
                 <a href="">
                     <li>CONTACT</li>
                 </a>
-                <a href="">
-                    <li>MORE</i><i class="fa-solid fa-caret-down"></i></li>
-                </a>
+                
+                    <li id="moreBtn">
+                        MORE</i><i class="fa-solid fa-caret-right"></i>
+                        <ul id="subMenu" class="hide">
+                            <a href="">
+                                <li>Merchandise</li>
+                            </a><a href="">
+                                <li>Extra</li>
+                            </a><a href="">
+                                <li>Media</li>
+                            </a>
+                        </ul>
+                    </li>
+                
             </ul>
             <form action="" method="post">
                 <input type="text" name="search">
@@ -146,15 +158,15 @@
                         <p>Email: mail@mail.com</p>
                     </div>
                 </div>
-                
-                    <form id="paper" action="" method="post">
-                        <div><input type="text" placeholder="Name"></div>
-                        <div><input type="text" placeholder="Email"></div>
-                        <div><input type="text" placeholder="Message"></div>
-                        <div id="sends"><input id="send" type="submit" value="SEND"></div>
 
-                    </form>
-                
+                <form id="paper" action="" method="post">
+                    <div><input type="text" placeholder="Name"></div>
+                    <div><input type="text" placeholder="Email"></div>
+                    <div><input type="text" placeholder="Message"></div>
+                    <div id="sends"><input id="send" type="submit" value="SEND"></div>
+
+                </form>
+
             </div>
             <img src="./assets/img/map.jpg" alt="" id="map">
 
